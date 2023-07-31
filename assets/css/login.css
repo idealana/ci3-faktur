@@ -1,0 +1,91 @@
+:root {
+    --primary-color: linear-gradient(to right, #b09f74, #64e9ff);
+    --secondary-color: #103ce7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+}
+
+.login-box {
+    width: 25%;
+    padding: 2.4em;
+    background-color: #fff;
+    border-radius: 1em;
+}
+
+.login-box h1 {
+    font-size: 1.4em;
+}
+
+.login-box .form-group {
+    position: relative;
+}
+
+.login-box .form-group .label-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 8px);
+    user-select: none;
+    pointer-events: none;
+    color: #848484;
+    transition: .3s ease;
+    font-size: .9em;
+}
+
+.login-box .form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: none;
+}
+
+.login-box .form-control:valid ~ span,
+.login-box .form-control:focus ~ span {
+    transform: translate(10px, -11px);
+    background-color: #fff;
+    padding: 0 2px;
+    font-size: .75em;
+    color: var(--secondary-color);
+}
+
+.login-box .btn {
+    font-size: .9em;
+}
+
+.login-box .btn-login {
+    color: #fff;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: .25rem;
+}
+
+/* Responsive */
+@media only screen and (max-width: 576px) {
+    .login-box {
+        width: 100%;
+        padding: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .login-box {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .login-box {
+        width: 50%;
+    }
+}

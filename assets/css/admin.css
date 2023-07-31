@@ -1,0 +1,120 @@
+html, body {
+	scroll-behavior: smooth;
+}
+
+/* @Bootstrap Override */
+
+/* Table */
+.table {
+	font-size: .85rem;
+}
+
+.table td, .table th {
+	padding: .5rem;
+}
+
+/* Button */
+.btn-sm {
+	font-size: .8rem;
+}
+
+.btn-xs {
+	font-size: .6rem;
+}
+
+/* Brand */
+.brand-link {
+	line-height: 1.2;
+	padding: .65rem .5rem;
+}
+
+/* Nav */
+.navbar {
+	padding: .15rem;
+}
+
+.nav.nav-sidebar {
+	font-size: .875rem !important; /* text-sm */
+}
+
+.navbar-nav .user-fullname {
+	user-select: none;
+}
+
+.navbar-nav .user-nav {
+	padding: .6rem .8rem;
+}
+
+/* Content */
+.content-header {
+	padding: 5px .5rem;
+}
+
+.card-body {
+	padding: .75rem 1.25rem;
+}
+
+/* Modal */
+.modal-header {
+	padding: .6rem .9rem;
+}
+
+.modal-body {
+	padding: .75rem 1rem;
+}
+
+.modal-body.max-h {
+	max-height: 75vh;
+	overflow-y: auto;
+}
+
+.modal-footer {
+	padding: .3rem .75rem;
+}
+/* End of @Bootstrap Override */
+
+/* @AdminLTE Override */
+[class*="sidebar-dark-"] {
+	background-color: #594a26;
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active {
+	background-color: #b09f74;
+}
+/* End of @AdminLTE Override */
+
+/* @HTML Override */
+input[type="checkbox"] {
+	cursor: pointer;
+}
+/* End of @HTML Override */
+
+/* @DataTable */
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+	margin: 2px;
+}
+
+div.dataTables_wrapper th, div.dataTables_wrapper td {
+	padding: .3em;
+}
+
+div.dataTables_paginate .page-item .page-link {
+	padding: .3rem .5rem;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+	padding-top: .5rem;
+}
+
+div.dataTables_filter .form-control-sm {
+	height: calc(1.7rem + 2px);
+	font-size: .75rem;
+}
+
+div.dataTables_paginate .page-item .page-link,
+div.dataTables_wrapper div.dataTables_info,
+div.dataTables_length label,
+div.dataTables_filter label {
+	font-size: .9rem;
+}
+/* End of @DataTable Override */
